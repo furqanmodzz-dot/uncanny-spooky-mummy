@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TulisTugas.id - Jasa Tulis Buku Tugas & Catatan Sekolah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Short+Stack&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#EEF2FF',
+                            100: '#E0E7FF',
+                            500: '#6366F1',
+                            600: '#4F46E5',
+                            700: '#4338CA',
+                            900: '#1E1B4B',
+                        },
+                        paper: {
+                            50: '#FAF8F5',
+                            100: '#F4EFE6',
+                            200: '#E8DFD0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        hand: ['Caveat', 'cursive'],
+                        child: ['Short Stack', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .notebook-pattern {
+            background-color: #FAF8F5;
+            background-image: radial-gradient(#E2D8C7 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .ruled-line-bg {
+            background: linear-gradient(transparent 92%, #CBD5E1 92%);
+            background-size: 100% 2rem;
+            line-height: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-paper-50 text-slate-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-paper-50/90 backdrop-blur-md border-b border-paper-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl shadow-lg shadow-brand-500/30">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 block leading-none">TulisTugas<span class="text-brand-600">.id</span></span>
+                    <span class="text-[11px] text-slate-500 font-medium tracking-wider uppercase">Bantu Tugas Sekolah & Catatan</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#fitur" class="hover:text-brand-600 transition-colors">Keunggulan</a>
+                <a href="#gaya-tulisan" class="hover:text-brand-600 transition-colors">Pilihan Tulisan</a>
+                <a href="#kalkulator" class="hover:text-brand-600 transition-colors">Hitung Biaya</a>
+                <a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <a href="https://wa.me/6287744343759?text=Halo%20Admin%20TulisTugas,%20saya%20mau%20tanya%20jasa%20tulis%20buku%20tugas%20sekolah" 
+               target="_blank" 
+               class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Chat Admin</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-brand-600 p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-paper-100 border-b border-paper-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#fitur" class="block text-slate-700 font-medium py-1">Keunggulan</a>
+            <a href="#gaya-tulisan" class="block text-slate-700 font-medium py-1">Pilihan Tulisan</a>
+            <a href="#kalkulator" class="block text-slate-700 font-medium py-1">Hitung Biaya</a>
+            <a href="#faq" class="block text-slate-700 font-medium py-1">FAQ</a>
+            <a href="https://wa.me/6287744343759?text=Halo%20Admin%20TulisTugas,%20saya%20mau%20tanya%20jasa%20tulis%20buku%20tugas%20sekolah" 
+               target="_blank" 
+               class="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white py-3 rounded-xl font-bold text-sm mt-3">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Hubungi Admin WA</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-12 md:py-20 notebook-pattern overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-700 border border-brand-100 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+                        <span>Jasa Spesialis Tulis Buku Tugas Sekolah & Catatan</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                        Tugas Sekolah Numpuk? <br class="hidden sm:inline"> Biar Kami Yang <span class="text-brand-600 underline decoration-brand-200 decoration-wavy">Tuliskan!</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Nggak sempat nyalin catatan buku atau ngerjain tugas tulis tangan sekolah? Serahkan ke kami! Hasil tulisan **rapi, cepat, mirip tulisan asli, dan privasi kamu terjamin 100%**.
+                    </p>
+
+                    <!-- Fast Order Action Form Preview -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#kalkulator" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all shadow-lg shadow-brand-500/25 hover:shadow-xl transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Hitung Biaya & Pesan</span>
+                        </a>
+
+                        <a href="https://wa.me/6287744343759?text=Halo%20Admin,%20saya%20mau%20order%20jasa%20tulis%20buku%20tugas%20sekolah" 
+                           target="_blank"
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-4 rounded-2xl text-base transition-all shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Chat WA (+6287744343759)</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-6 border-t border-paper-200 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl font-extrabold text-slate-900">100%</p>
+                            <p class="text-xs text-slate-500 font-medium">Buku Tulis Sidu/BigBoss</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-slate-900">Rapi</p>
+                            <p class="text-xs text-slate-500 font-medium">Bisa Pilih Style</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-slate-900">Aman</p>
+                            <p class="text-xs text-slate-500 font-medium">Rahasia Terjaga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Notebook -->
+                <div class="lg:col-span-5">
+                    <div class="relative bg-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-200">
+                        <!-- Notebook Top Spiral Decoration -->
+                        <div class="flex justify-between items-center pb-4 mb-4 border-b border-slate-100">
+                            <div class="flex gap-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Buku Tugas Siswa</span>
+                        </div>
+
+                        <!-- Ruled Notebook Page Simulation -->
+                        <div class="ruled-line-bg text-slate-800 font-hand text-2xl space-y-1 py-2 px-1">
+                            <p class="text-brand-700 font-bold">Mata Pelajaran: Biologi / Bahasa Indonesia</p>
+                            <p>Tugas: Catatan Ringkasan Bab 4</p>
+                            <p class="text-slate-700">✔ Garis pinggir rapi & lurus</p>
+                            <p class="text-slate-700">✔ Tinta pulpen hitam/biru pekat</p>
+                            <p class="text-slate-700">✔ Bebas typo & coretan</p>
+                            <p class="text-emerald-600 font-bold">Siap kirim balik / Scan PDF HD!</p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xs">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <div class="text-left">
+                                    <p class="text-xs font-bold text-slate-900">Admin Fast Response</p>
+                                    <p class="text-[11px] text-slate-500">+62 877-4434-3759</p>
+                                </div>
+                            </div>
+                            <span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-md font-bold">Online 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SPESIALISASI LAYANAN TUGAS SEKOLAH -->
+    <section id="fitur" class="py-16 bg-white border-b border-paper-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Fokus Layanan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Layanan Spesialis Buku Tugas Sekolah</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Segala jenis tugas tulis tangan buku sekolah kamu siap kami selesaikan tepat waktu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-paper-50 p-8 rounded-3xl border border-paper-200 hover:border-brand-500 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-brand-600 text-white rounded-2xl flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-500/20">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Salin Catatan & Modul</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Menyalin catatan pelajaran dari foto, PDF, atau PowerPoint teman/guru ke dalam buku tulis kamu (Sidu, Big Boss, dll).
+                    </p>
+                    <span class="text-xs font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-lg">Buku Tulis Sidu / BigBoss</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-paper-50 p-8 rounded-3xl border border-paper-200 hover:border-brand-500 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-brand-600 text-white rounded-2xl flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-500/20">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Tugas PR & LKS</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Penulisan soal dan jawaban PR sekolah, LKS, rangkuman bab, atau lembar portofolio siswa secara rapi dan bersih.
+                    </p>
+                    <span class="text-xs font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-lg">Buku / Kertas Folio</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-paper-50 p-8 rounded-3xl border border-paper-200 hover:border-brand-500 hover:shadow-xl transition-all">
+                    <div class="w-12 h-12 bg-brand-600 text-white rounded-2xl flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-500/20">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Kirim Berkas / Scan HD</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Bisa dikirim dalam bentuk **buku fisik via Ekspedisi/Gojek** atau **Scan PDF HD** jika hanya perlu dikumpul secara online.
+                    </p>
+                    <span class="text-xs font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-lg">Fisik & Digital PDF</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PILIHAN GAYA TULISAN DEMO -->
+    <section id="gaya-tulisan" class="py-16 notebook-pattern border-b border-paper-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Custom Style</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Pilih Gaya Tulisan Sesuai Keinginan</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Kamu bisa menyesuaikan gaya tulisan agar terlihat mirip dengan karakter tulisanmu sendiri!</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xl">
+                <!-- Style Selector Buttons -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                    <button onclick="switchStyle('rapi')" id="btn-rapi" class="style-tab-btn py-3.5 px-4 rounded-xl font-bold text-sm border bg-brand-600 text-white border-brand-600 transition-all shadow-md">
+                        <i class="fa-solid fa-pen-line mr-2"></i> Rapi Standar Siswa
+                    </button>
+                    <button onclick="switchStyle('bersambung')" id="btn-bersambung" class="style-tab-btn py-3.5 px-4 rounded-xl font-bold text-sm border bg-slate-50 text-slate-700 border-slate-200 hover:border-brand-500 transition-all">
+                        <i class="fa-solid fa-italic mr-2"></i> Tegak Bersambung
+                    </button>
+                    <button onclick="switchStyle('aesthetic')" id="btn-aesthetic" class="style-tab-btn py-3.5 px-4 rounded-xl font-bold text-sm border bg-slate-50 text-slate-700 border-slate-200 hover:border-brand-500 transition-all">
+                        <i class="fa-solid fa-wand-magic-sparkles mr-2"></i> Aesthetic / Cursive
+                    </button>
+                </div>
+
+                <!-- Interactive Notebook Preview -->
+                <div class="bg-paper-50 rounded-2xl p-6 sm:p-8 border border-paper-200 ruled-line-bg min-h-[220px] flex flex-col justify-center">
+                    <div id="style-title" class="text-xs font-bold uppercase text-brand-700 tracking-wider mb-2">Style: Rapi Standar Siswa</div>
+                    <div id="style-preview-text" class="font-sans text-xl sm:text-2xl text-slate-800 leading-relaxed">
+                        "Fotosintesis adalah proses pembuat makanan pada tumbuhan hijau dengan bantuan cahaya matahari dan klorofil."
+                    </div>
+                    <p id="style-desc" class="text-xs text-slate-500 mt-6 pt-4 border-t border-slate-200">
+                        * Gaya standar paling aman & mudah dibaca oleh guru mata pelajaran.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR ESTIMASI BIAYA & DIRECT FORM WA -->
+    <section id="kalkulator" class="py-16 bg-white border-b border-paper-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-900 to-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <!-- Background Accent Glow -->
+                <div class="absolute -right-20 -top-20 w-60 h-60 bg-brand-500/20 rounded-full blur-3xl"></div>
+
+                <div class="text-center mb-8 relative z-10">
+                    <span class="text-xs font-bold uppercase tracking-widest bg-brand-500/30 text-brand-200 px-3 py-1 rounded-full border border-brand-400/30">Hitung Cepat</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Kalkulator Estimasi Biaya Tugas</h2>
+                    <p class="text-sm text-slate-300 mt-1">Masukkan detail tugas kamu untuk melihat estimasi harganya secara transparan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                    <!-- Form Input -->
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Jenis Buku / Kertas</label>
+                            <select id="calc-media" onchange="calculateTotal()" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                <option value="2000">Buku Tulis Standar SIDU (Rp 2.000 / hal)</option>
+                                <option value="3000" selected>Buku Tulis Big Boss / Buku Besar (Rp 3.000 / hal)</option>
+                                <option value="3000">Kertas Folio Bergaris (Rp 3.000 / hal)</option>
+                                <option value="3500">Kertas HVS A4 (Rp 3.500 / hal)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Jumlah Halaman / Lembar</label>
+                            <input type="number" id="calc-pages" value="5" min="1" oninput="calculateTotal()" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Kecepatan Pengerjaan</label>
+                            <select id="calc-speed" onchange="calculateTotal()" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                <option value="1">Reguler (1-2 Hari Kerja)</option>
+                                <option value="1.3">Express Kilat / Same Day (+30%)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Nama Kamu / Sekolah (Opsional)</label>
+                            <input type="text" id="calc-name" placeholder="Misal: Andi - SMAN 1" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                        </div>
+                    </div>
+
+                    <!-- Total Result Box -->
+                    <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Estimasi Total Biaya</span>
+                            <div id="calc-total" class="text-4xl sm:text-5xl font-extrabold text-emerald-400 my-4">Rp 15.000</div>
+                            
+                            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Bebas pilih style tulisan</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Gratis foto hasil pengerjaan</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Admin siap respon cepat via WA</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="sendOrderWA()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-4 rounded-xl text-sm transition-all shadow-lg flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Kirim Detail Pesanan ke WA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-16 bg-white border-b border-paper-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Tanya Jawab</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Pertanyaan Sering Diajukan (FAQ)</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-paper-50 rounded-2xl p-6 border border-paper-200">
+                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                        <i class="fa-solid fa-circle-question text-brand-600"></i>
+                        Bagaimana cara saya mengirimkan buku tugasnya?
+                    </h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Kamu bisa memilih 2 cara: **1)** Mengirimkan buku tulis kamu via Gojek/GrabExpress (area lokal) atau JNE/JNT/Sicepat. **2)** Jika tugas hanya perlu dikumpul berbentuk foto/PDF ke guru, kami yang sediakan bukunya lalu hasilnya kami foto/scan HD.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-paper-50 rounded-2xl p-6 border border-paper-200">
+                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                        <i class="fa-solid fa-user-shield text-brand-600"></i>
+                        Apakah privasi dan identitas saya aman?
+                    </h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        100% Terjamin Aman! Kami tidak pernah mepublikasikan nama siswa, nama sekolah, atau konten tugas kamu tanpa izin. Kerahasiaan adalah prioritas utama kami.
+                    </p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-paper-50 rounded-2xl p-6 border border-paper-200">
+                    <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-brand-600"></i>
+                        Berapa lama pengerjaan tugasnya?
+                    </h3>
+                    <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                        Pengerjaan standar memakan waktu 1–2 hari kerja tergantung jumlah lembar. Jika kamu butuh cepat (deadline mendesak), bisa pilih opsi **Express Same Day**.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center text-lg font-bold">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-white">TulisTugas<span class="text-brand-500">.id</span></span>
+                        <p class="text-xs text-slate-400">Jasa Tulis Tangan Buku Tugas Sekolah</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 text-sm font-semibold">
+                    <span>Admin WhatsApp:</span>
+                    <a href="https://wa.me/6287744343759" target="_blank" class="text-emerald-400 hover:underline font-mono text-base">
+                        +62 877-4434-3759
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-slate-500">
+                &copy; 2026 TulisTugas.id - Layanan Spesialis Tulis Buku Tugas Sekolah.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOAT WHATSAPP BUTTON -->
+    <a href="https://wa.me/6287744343759?text=Halo%20Admin%20TulisTugas,%20saya%20mau%20tanya%20jasa%20tulis%20buku%20tugas%20sekolah" 
+       target="_blank" 
+       aria-label="Chat WhatsApp Admin"
+       class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center transition-all transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Style Switcher Preview Logic
+        const styleData = {
+            rapi: {
+                title: "Style: Rapi Standar Siswa",
+                fontClass: "font-sans",
+                text: '"Fotosintesis adalah proses pembuat makanan pada tumbuhan hijau dengan bantuan cahaya matahari dan klorofil."',
+                desc: "* Gaya standar paling aman & mudah dibaca oleh guru mata pelajaran."
+            },
+            bersambung: {
+                title: "Style: Tegak Bersambung",
+                fontClass: "font-hand",
+                text: '"Fotosintesis adalah proses pembuat makanan pada tumbuhan hijau dengan bantuan cahaya matahari dan klorofil."',
+                desc: "* Gaya tulisan tegak bersambung halus dan rapi."
+            },
+            aesthetic: {
+                title: "Style: Aesthetic / Cursive",
+                fontClass: "font-child",
+                text: '"Fotosintesis adalah proses pembuat makanan pada tumbuhan hijau dengan bantuan cahaya matahari dan klorofil."',
+                desc: "* Gaya tulisan anak sekolah yang estetik, cantik, dan bersih."
+            }
+        };
+
+        function switchStyle(key) {
+            const previewTitle = document.getElementById('style-title');
+            const previewText = document.getElementById('style-preview-text');
+            const previewDesc = document.getElementById('style-desc');
+            const buttons = document.querySelectorAll('.style-tab-btn');
+
+            buttons.forEach(btn => {
+                btn.className = "style-tab-btn py-3.5 px-4 rounded-xl font-bold text-sm border bg-slate-50 text-slate-700 border-slate-200 hover:border-brand-500 transition-all";
+            });
+
+            const activeBtn = document.getElementById(`btn-${key}`);
+            if(activeBtn) {
+                activeBtn.className = "style-tab-btn py-3.5 px-4 rounded-xl font-bold text-sm border bg-brand-600 text-white border-brand-600 transition-all shadow-md";
+            }
+
+            const data = styleData[key];
+            previewTitle.innerText = data.title;
+            previewText.className = `${data.fontClass} text-xl sm:text-2xl text-slate-800 leading-relaxed`;
+            previewText.innerText = data.text;
+            previewDesc.innerText = data.desc;
+        }
+
+        // Calculator Logic
+        function calculateTotal() {
+            const pricePerUnit = parseFloat(document.getElementById('calc-media').value);
+            const pages = parseInt(document.getElementById('calc-pages').value) || 1;
+            const speedMultiplier = parseFloat(document.getElementById('calc-speed').value);
+
+            let total = pricePerUnit * pages * speedMultiplier;
+            document.getElementById('calc-total').innerText = "Rp " + Math.round(total).toLocaleString('id-ID');
+        }
+
+        // Send Custom Order Form to WhatsApp
+        function sendOrderWA() {
+            const name = document.getElementById('calc-name').value || "Siswa";
+            const selectMedia = document.getElementById('calc-media');
+            const mediaText = selectMedia.options[selectMedia.selectedIndex].text;
+            const pages = document.getElementById('calc-pages').value;
+            const selectSpeed = document.getElementById('calc-speed');
+            const speedText = selectSpeed.options[selectSpeed.selectedIndex].text;
+            const total = document.getElementById('calc-total').innerText;
+
+            const text = `Halo Admin TulisTugas.id!\nSaya mau pesan Jasa Tulis Buku Tugas Sekolah:\n\n` +
+                         `• Nama/Sekolah: ${name}\n` +
+                         `• Jenis Buku: ${mediaText}\n` +
+                         `• Jumlah Halaman: ${pages} lembar/hal\n` +
+                         `• Kecepatan: ${speedText}\n` +
+                         `• Estimasi Biaya: ${total}\n\n` +
+                         `Mohon info pengiriman dan kelanjutan tugasnya ya min! Terima kasih.`;
+
+            const waUrl = `https://wa.me/6287744343759?text=${encodeURIComponent(text)}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
