@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1267d5">
+<title>JASATULISSOPPENG | Jasa Tulis & Kreatif</title>
+<style>
+:root{--blue:#1267d5;--deep:#08499f;--pale:#eaf3ff;--ink:#14243a;--muted:#61738b;--line:#dce8f6;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7faff;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-weight:900;color:var(--deep);letter-spacing:.2px}.brand span{color:var(--blue)}
+nav{display:flex;gap:20px;font-size:14px;color:#42536b}nav a:hover{color:var(--blue)}
+.hero{padding:62px 0 48px;background:linear-gradient(125deg,#eaf3ff,#fff 65%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:32px}
+.eyebrow{display:inline-block;background:#d9eaff;color:var(--deep);font-weight:700;font-size:12px;padding:7px 12px;border-radius:30px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.08;margin:17px 0 14px;letter-spacing:-1.5px}h1 span{color:var(--blue)}
+.lead{font-size:17px;color:var(--muted);max-width:570px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:12px;padding:12px 18px;font-weight:700;font-size:14px;cursor:pointer}
+.primary{background:var(--blue);color:white}.primary:hover{background:var(--deep)}.secondary{background:white;color:var(--deep);border:1px solid var(--line)}
+.hero-card{background:white;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 18px 45px #164d8912}
+.hero-icon{width:68px;height:68px;border-radius:20px;background:var(--pale);display:grid;place-items:center;font-size:34px}
+.hero-card h3{margin:15px 0 5px}.hero-card p{color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.stat{background:#f5f9ff;border-radius:13px;padding:12px;text-align:center}.stat b{display:block;color:var(--deep);font-size:18px}.stat small{color:var(--muted);font-size:11px}
+section{padding:54px 0}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:30px;margin:0 0 7px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:21px;box-shadow:0 8px 24px #173e6d08}
+.card .emoji{font-size:28px}.card h3{margin:10px 0 5px}.card p{color:var(--muted);font-size:14px;margin:0 0 14px}.price{font-weight:800;color:var(--deep);font-size:17px}.note{font-size:12px;color:var(--muted);margin-top:8px}
+.price-table{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;max-width:760px;margin:auto}
+.price-row{display:flex;justify-content:space-between;gap:15px;padding:14px 18px;border-bottom:1px solid var(--line)}.price-row:last-child{border:0}.price-row b{color:var(--deep);white-space:nowrap}
+.order-box{max-width:760px;margin:auto;background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 12px 32px #173e6d0a}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-weight:700;font-size:13px;margin-bottom:6px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd9ea;border-radius:10px;font:inherit;background:white;color:var(--ink)}textarea{min-height:95px;resize:vertical}.full{grid-column:1/-1}.hint{font-size:12px;color:var(--muted);margin:10px 0 0}
+.contact{background:#eaf3ff}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.contact h2{margin:0 0 6px}.contact p{margin:0;color:var(--muted)}
+footer{padding:25px 0;text-align:center;color:var(--muted);font-size:13px;background:#fff;border-top:1px solid var(--line)}
+@media(max-width:720px){nav{gap:12px;font-size:12px}.hero{padding:42px 0}.hero-grid{grid-template-columns:1fr}.hero-card{max-width:460px}.cards{grid-template-columns:1fr}.stats{max-width:420px}section{padding:42px 0}.contact-inner{display:block}.contact-inner .btn{margin-top:16px}}
+@media(max-width:440px){nav a:nth-child(2){display:none}.nav{height:60px}form{grid-template-columns:1fr}.full{grid-column:auto}.price-row{font-size:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#">JASA<span>TULIS</span>SOPPENG</a><nav><a href="#layanan">Layanan</a><a href="#harga">Harga</a><a href="#pesan">Pesan</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">JASA TUGAS • KABUPATEN SOPPENG</span><h1>Tugas lebih rapi,<br><span>jadi lebih mudah.</span></h1><p class="lead">Melayani jasa tulis tangan, ketik, dan gambar/sketsa. Praktis untuk membantu kebutuhan tugas sekolahmu.</p><div class="actions"><a class="btn primary" href="#pesan">Pesan sekarang</a><a class="btn secondary" href="#layanan">Lihat layanan</a></div></div>
+<div class="hero-card"><div class="hero-icon">✍️</div><h3>JASATULISSOPPENG</h3><p>Layanan tugas yang rapi, jelas, dan sesuai arahan pelanggan.</p><div class="stats"><div class="stat"><b>3+</b><small>Layanan</small></div><div class="stat"><b>💙</b><small>Ramah</small></div><div class="stat"><b>Soppeng</b><small>Area layanan</small></div></div></div>
+</div></section>
+<section id="layanan"><div class="wrap"><div class="section-head"><h2>Layanan Kami</h2><p>Pilih layanan yang kamu butuhkan.</p></div><div class="cards">
+<article class="card"><div class="emoji">✍️</div><h3>Jasa Tulis Tangan</h3><p>Penulisan tugas di buku, folio, maupun kertas HVS dengan tulisan rapi.</p><div class="price">Mulai Rp2.000/halaman</div></article>
+<article class="card"><div class="emoji">⌨️</div><h3>Jasa Ketik</h3><p>Pengetikan tugas atau dokumen sesuai format dan instruksi.</p><div class="price">Mulai Rp5.000/halaman</div></article>
+<article class="card"><div class="emoji">🎨</div><h3>Jasa Gambar / Sketsa</h3><p>Menerima gambar/sketsa sesuai contoh atau permintaan. Ketersediaan dan harga dikonfirmasi dahulu.</p><div class="price">Harga sesuai tingkat kesulitan</div></article>
+</div></div></section>
+<section id="harga"><div class="wrap"><div class="section-head"><h2>Daftar Harga</h2><p>Harga awal, detail pesanan dapat memengaruhi biaya.</p></div><div class="price-table">
+<div class="price-row"><span>Buku kecil</span><b>Rp2.000 / halaman</b></div>
+<div class="price-row"><span>Buku besar / panjang</span><b>Rp3.000 / halaman</b></div>
+<div class="price-row"><span>HVS A4</span><b>Rp5.000 / halaman</b></div>
+<div class="price-row"><span>HVS F4</span><b>Rp7.000 / halaman</b></div>
+<div class="price-row"><span>Ketik A4</span><b>Mulai Rp5.000</b></div>
+<div class="price-row"><span>Ketik folio</span><b>Mulai Rp8.000</b></div>
+</div><p class="note" style="text-align:center">*Harga jasa gambar/sketsa dan pesanan khusus dikonfirmasi melalui admin sebelum dikerjakan.</p></div></section>
+<section id="pesan"><div class="wrap"><div class="section-head"><h2>Formulir Pemesanan</h2><p>Isi detail pesanan, lalu kirim melalui WhatsApp.</p></div><div class="order-box">
+<form id="orderForm">
+<div><label for="nama">Nama</label><input id="nama" required placeholder="Nama kamu"></div>
+<div><label for="layananPilih">Pilih layanan</label><select id="layananPilih"><option>Jasa tulis tangan</option><option>Jasa ketik</option><option>Jasa gambar / sketsa</option></select></div>
+<div><label for="jumlah">Jumlah halaman / item</label><input id="jumlah" placeholder="Contoh: 5 halaman"></div>
+<div><label for="deadline">Tanggal dibutuhkan</label><input id="deadline" type="date"></div>
+<div class="full"><label for="detail">Detail pesanan</label><textarea id="detail" placeholder="Jenis kertas, materi, contoh gambar, atau instruksi lainnya..."></textarea></div>
+<div class="full"><label for="wa">Nomor WhatsApp admin (kode negara 62)</label><input id="wa" inputmode="numeric" placeholder="Contoh: 62812xxxxxxxx" required></div>
+<div class="full"><button class="btn primary" type="submit">Kirim pesanan via WhatsApp ↗</button><p class="hint">Nomor WhatsApp admin dimasukkan terlebih dahulu agar tombol pemesanan dapat membuka chat yang benar.</p></div>
+</form></div></div></section>
+<section class="contact"><div class="wrap contact-inner"><div><h2>Pembayaran & Area Layanan</h2><p>Pembayaran: tunai, DANA, SeaBank, dan QRIS. Area layanan: Kab. Soppeng. Ongkir/antar jika tersedia akan dikonfirmasi admin.</p></div><a class="btn primary" href="#pesan">Buat pesanan</a></div></section>
+</main>
+<footer>© <span id="year"></span> JASATULISSOPPENG · Terima kasih telah mendukung usaha lokal 💙</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('orderForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('nama').value.trim();
+ const service=document.getElementById('layananPilih').value;
+ const qty=document.getElementById('jumlah').value.trim()||'-';
+ const date=document.getElementById('deadline').value||'-';
+ const detail=document.getElementById('detail').value.trim()||'-';
+ const raw=document.getElementById('wa').value.replace(/\D/g,'');
+ if(raw.length<9){alert('Masukkan nomor WhatsApp admin yang benar, diawali 62.');return;}
+ const msg=`Halo admin JASATULISSOPPENG, saya ingin memesan jasa.%0A%0ANama: ${encodeURIComponent(name)}%0ALayanan: ${encodeURIComponent(service)}%0AJumlah: ${encodeURIComponent(qty)}%0ATanggal dibutuhkan: ${encodeURIComponent(date)}%0ADetail: ${encodeURIComponent(detail)}`;
+ window.open('https://wa.me/'+raw+'?text='+msg,'_blank','noopener');
+});
+</script>
+</body></html>
